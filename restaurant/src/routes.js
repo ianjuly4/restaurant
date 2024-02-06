@@ -1,5 +1,6 @@
 import App from "./components/App"
-import Filter from "./components/Filter"
+
+import RestaurantForm from "./components/RestaurantForm";
 
 const routes = [
   {
@@ -7,8 +8,8 @@ const routes = [
     element: <App />,
   },
   {
-    path: "/Filter",
-    element: <Filter />,
+    path: "/RestaurantForm",
+    element: <RestaurantForm />
   }
 ]
 export default routes;

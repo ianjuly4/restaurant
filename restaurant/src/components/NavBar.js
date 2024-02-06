@@ -8,13 +8,13 @@ function NavBar(){
             <NavLink 
             to="/" 
             className="nav-link">
-                App
+                Home
             </NavLink>
 
-            <NavLink 
-            to="/filter"
+            <NavLink
+            to="/restaurantForm"
             className="nav-link">
-                Filter
+                New 
             </NavLink>
         </nav>
     )
