@@ -1,25 +1,57 @@
-import React from 'react'
+import React, {useState} from 'react'
 import NavBar from "./NavBar"
 
 function RestaurantForm(){
+    const [restaurant, setRestaurant] = useState("");
+    const [address, setAddress] = useState("")
+    const [type, setType] = useState("")
+    
+    function handleSubmit(e) {
+        e.preventDefault();
+        const restaurant = {
+            restaurantName: restaurant,
+            address: address,
+            typeOfFood: type,
+            Price: false,
+        }
+        fetch("http://localhost:3000/Restaurants", {
+            method: "POST",
+            headers: {
+                "content-type" : "application/Json",
+            },
+            body: JSON.stringify(restaurant)
+        })
+        .then((r)=>r.json())
+        .then((newRestaurant)=>console.log(newRestaurant))
+    }
     return(
-        <div className='RestaurantHeader'>
-        <NavBar/>
-         
-            
-            <form className="NewRestaurant">
-            <h2>DON'T SEE YOUR FAVORITE RESTAURANT? ADD IT!!</h2>
-                 <label>
-                   
+        <div>
+            <NavBar/>
+            <form className="Form" onSubmit={handleSubmit} >
+                <label>
                     <input 
-                    type="text" 
-                    name="name" 
+                        type="text" 
+                        name="search" 
+                        placeholder="        Restaurant Name" 
+                        value={restaurant}
+                        onChange={(e)=>setRestaurant(e.target.value)}
                     />
                 </label>
-
                 <label>
-                     
-                    <select name="Food Type" >
+                    <input
+                        type="text"
+                        name="search"
+                        placeholder=' Restaurant Street Address' 
+                        value={address}
+                        onChange={(e)=>setAddress(e.target.value)}
+                    />
+                </label>
+                <label>
+                    <select 
+                        name="type" 
+                        value={type}
+                        onChange={(e)=>setType(e.target.value)}
+                        >
                         <option value="All">Food Type</option>
                         <option value="Spanish">Spanish</option>
                         <option value="Italian">Italian</option>
@@ -39,8 +71,7 @@ function RestaurantForm(){
                         <option value="$$$">$$$</option>
                     </select>
                 </label>
-
-                    <button type="submit">Add to List</button>
+                <button type="submit">Add Restaurant</button>
             </form>
         </div>
     )
