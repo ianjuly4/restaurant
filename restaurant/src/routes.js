@@ -1,6 +1,7 @@
 import App from "./components/App"
-
 import RestaurantForm from "./components/RestaurantForm";
+import About from "./components/About";
+
 
 const routes = [
   {
@@ -9,7 +10,11 @@ const routes = [
   },
   {
     path: "/RestaurantForm",
-    element: <RestaurantForm />
+    element: <RestaurantForm />,
+  },
+  {
+    path: "/About",
+    element: <About />,
   }
 ]
 export default routes;

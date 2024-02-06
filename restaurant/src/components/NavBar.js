@@ -15,6 +15,12 @@ function NavBar(){
             className="nav-link">
                 New 
             </NavLink>
+
+            <NavLink
+            to="/about"
+            className="nav-link">
+                About
+            </NavLink>
         </nav>
     )
 }
