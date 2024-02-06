@@ -1,23 +1,17 @@
-import React from  "react"
+import React from "react"
+import RestaurantList from "./RestaurantList";
 import Header from "./Header"
 import NavBar from "./NavBar"
-import Filter from "./Filter"
-import RestaurantItem from "./RestaurantItem"
 
 
 function App() {
   return(
     <div className="App">
-    <> 
-    <NavBar/>
-      <Header/>
-      <Filter/>
-      <ul>
-        <RestaurantItem/>
-      </ul>
-    </>
+      <>
+      <RestaurantList/>
+      </>
     </div>
-  ) 
+  )
 }
 
 export default App;

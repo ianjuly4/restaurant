@@ -1,16 +1,16 @@
-import App from "./components/App"
-import RestaurantForm from "./components/RestaurantForm";
+import RestaurantList from "./components/RestaurantList"
+import Form from "./components/Form";
 import About from "./components/About";
 
 
 const routes = [
   {
     path: "/",
-    element: <App />,
+    element: <RestaurantList/>,
   },
   {
-    path: "/RestaurantForm",
-    element: <RestaurantForm />,
+    path: "/Form",
+    element: <Form />,
   },
   {
     path: "/About",

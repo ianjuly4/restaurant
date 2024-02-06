@@ -1,25 +1,27 @@
 import React, {useState} from 'react'
 import NavBar from "./NavBar"
 
-function RestaurantForm(){
+
+function Form(){
     const [restaurant, setRestaurant] = useState("");
     const [address, setAddress] = useState("")
     const [type, setType] = useState("")
+    const [price, setPrice] = useState("")
     
     function handleSubmit(e) {
         e.preventDefault();
-        const restaurant = {
+        const newRestaurant = {
             restaurantName: restaurant,
-            address: address,
-            typeOfFood: type,
-            Price: false,
+            Address: address,
+            Type: type,
+            Price: price,
         }
         fetch("http://localhost:3000/Restaurants", {
             method: "POST",
             headers: {
                 "content-type" : "application/Json",
             },
-            body: JSON.stringify(restaurant)
+            body: JSON.stringify(newRestaurant)
         })
         .then((r)=>r.json())
         .then((newRestaurant)=>console.log(newRestaurant))
@@ -27,12 +29,13 @@ function RestaurantForm(){
     return(
         <div>
             <NavBar/>
+            <h1 className="RestaurantHeader">DON'T SEE YOUR FAVORITE RESTAURANT? ADD IT!!</h1>
             <form className="Form" onSubmit={handleSubmit} >
                 <label>
                     <input 
                         type="text" 
                         name="search" 
-                        placeholder="        Restaurant Name" 
+                        placeholder="    Restaurant Name" 
                         value={restaurant}
                         onChange={(e)=>setRestaurant(e.target.value)}
                     />
@@ -41,7 +44,7 @@ function RestaurantForm(){
                     <input
                         type="text"
                         name="search"
-                        placeholder=' Restaurant Street Address' 
+                        placeholder='Restaurant Street Address' 
                         value={address}
                         onChange={(e)=>setAddress(e.target.value)}
                     />
@@ -64,7 +67,10 @@ function RestaurantForm(){
                     </select>
                 </label>
                 <label>
-                    <select name="Price" >
+                    <select 
+                        name="Price" 
+                        value={price}
+                        onChange={(e)=>setPrice(e.target.value)}>
                         <option value="All">Price</option>
                         <option value="$">$</option>
                         <option value="$$">$$</option>
@@ -76,4 +82,4 @@ function RestaurantForm(){
         </div>
     )
 }
-export default RestaurantForm
+export default Form

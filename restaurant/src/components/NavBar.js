@@ -11,7 +11,7 @@ function NavBar(){
             </NavLink>
 
             <NavLink
-            to="/restaurantForm"
+            to="/Form"
             className="nav-link">
                 New 
             </NavLink>
