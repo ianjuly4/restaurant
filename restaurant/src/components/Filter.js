@@ -5,13 +5,25 @@ function Filter(){
         <div className="Filter" >
           <input type="text" 
           name="search" 
-          placeholder="Search..." />
+          placeholder="Restaurant Name" />
     
-          <select name="filter" >
-            <option value="All">Filter by category</option>
-            <option value="Produce">Produce</option>
-            <option value="Dairy">Dairy</option>
-            <option value="Dessert">Dessert</option>
+          <select name="Filter" >
+            <option value="All">Food Type</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Italian">Italian</option>
+            <option value="American">American</option>
+            <option value="Tai">Tai</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Indian">Indian</option>
+            <option value="Vietnamese">Vietnamese</option>
+          </select>
+
+          <select name="Filter" >
+            <option value="All">Price</option>
+            <option value="$">$</option>
+            <option value="$$">$$</option>
+            <option value="$$$">$$$</option>
           </select>
         </div>
       );

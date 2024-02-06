@@ -1,0 +1,78 @@
+:root {
+    --magenta: rgb(210, 51, 210);
+    --cyan: rgb(98, 230, 230);
+    --yellow: rgb(237, 237, 32);
+    --font-color: rgb(33, 33, 33);
+    --font-color-light: rgb(155, 155, 155);
+    --background: rgb(255, 255, 255);
+    --background-light: rgb(230, 230, 230);
+  }
+
+.App {
+   
+    margin: 2rem auto;
+    padding: 1% 2rem;
+    max-width: 1200px;
+    max-height: 1200px;
+    background: var(--background);
+    color: var(--font-color);
+    box-shadow: 6px 6px 12px rgba(45, 45, 45, 1.0);
+    border-radius: 10px;
+    background-color: black;
+  }
+  .Header{
+    text-align: center;
+    font-size: min(25vw, 25px) ;
+    background-color: black;
+    color:white;
+}
+
+  .nav-link{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 80px;
+    padding: 5px;
+    margin: 0 6px 6px;
+    background: black;
+    text-decoration: none;
+    font-size: min(25vw, 25px) ;
+    color: white;
+}
+
+.active {
+    color: white;
+}
+
+  
+  body {
+    background: rgb(231, 231, 231);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+  }
+  
+  button,
+  select,
+  input {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: var(--background-light);
+    min-width: 120px;
+  }
+    
+  .Filter {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Filter select,
+  .Filter input {
+    width: 25%;
+    margin: 1rem 0;
+    background: var(--);
+  }
+  
+ 
+  
+ 
