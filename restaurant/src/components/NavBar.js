@@ -11,7 +11,7 @@ function NavBar(){
             </NavLink>
 
             <NavLink
-            to="/Form"
+            to="/FormPage"
             className="nav-link">
                 New 
             </NavLink>

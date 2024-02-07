@@ -1,5 +1,5 @@
 import RestaurantList from "./components/RestaurantList"
-import Form from "./components/Form";
+import FormPage from "./components/FormPage";
 import About from "./components/About";
 
 
@@ -9,8 +9,8 @@ const routes = [
     element: <RestaurantList/>,
   },
   {
-    path: "/Form",
-    element: <Form />,
+    path: "/FormPage",
+    element: <FormPage />,
   },
   {
     path: "/About",

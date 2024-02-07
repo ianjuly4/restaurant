@@ -28,8 +28,6 @@ function Form(){
     }
     return(
         <div>
-            <NavBar/>
-            <h1 className="RestaurantHeader">DON'T SEE YOUR FAVORITE RESTAURANT? ADD IT!!</h1>
             <form className="Form" onSubmit={handleSubmit} >
                 <label>
                     <input 
