@@ -1,9 +1,12 @@
 import React from "react"
 
-function Restaurant(){
+function Restaurant({name, address, type, price}){
 return (
     <li>
-        <h3 className="Restaurant">Name of Restaurant</h3>
+      <span>{name}</span>
+      <span>{address}</span>
+      <span>{type}</span>
+      <span>{price}</span>
     </li>
   );
  

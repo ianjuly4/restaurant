@@ -11,7 +11,7 @@ function Form(){
     function handleSubmit(e) {
         e.preventDefault();
         const newRestaurant = {
-            restaurantName: restaurant,
+            Name: restaurant,
             Address: address,
             Type: type,
             Price: price,

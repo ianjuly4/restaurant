@@ -1,5 +1,12 @@
 {
   "Restaurants" : [
+    {
+      "id": 1,
+      "name": "Sap Sua",
+      "address": "2550 E Colfax Ave",
+      "type": "Vietnamese",
+      "price": "$$"
+    }
     
   ]
 }

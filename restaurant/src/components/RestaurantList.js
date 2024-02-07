@@ -19,9 +19,14 @@ function RestaurantList(){
       <NavBar/>
       <Header/>
       <Filter/>
-      <ul>
-        <Restaurant/>
-      </ul>
+      <ul>{restaurants.map((restaurant)=>{
+        return <Restaurant key={restaurant.id} 
+        name={restaurant.name} 
+        address={restaurant.address}
+        type={restaurant.type}
+        price={restaurant.price}/>
+      })
+      }</ul>
     </>
     </div>
     )
