@@ -23,8 +23,8 @@ function RestaurantList(){
   const handlePriceChange = (e) => {
     setSelectedPrice(e.target.value)
   }
-  const onSearchChange = (e) => {
-    setRestaurantText(e.target.value)
+  const onSearchChange = (text) => {
+    setRestaurantText(text)
   }
   const filteredRestaurants = restaurants.filter((restaurant)=>{
     if(selectedPrice  === "All") return true;
@@ -32,6 +32,8 @@ function RestaurantList(){
   }).filter((restaurant)=>{
     if(selectedType === "All")return true;
     return restaurant.type === selectedType
+  }).filter((restaurant)=>{
+    return restaurant.name.toLowerCase().includes(restaurantText.toLowerCase())
   })
 
     return(
@@ -41,7 +43,8 @@ function RestaurantList(){
       <Header/>
       <Filter handleTypeChange={handleTypeChange}
       handlePriceChange={handlePriceChange}
-      onSearchChange={onSearchChange}/>
+      onSearchChange={onSearchChange}
+      search={restaurantText}/>
       <ul>{filteredRestaurants.map((restaurant)=>{
         return <Restaurant key={restaurant.id} 
         name={restaurant.name} 

@@ -1,7 +1,7 @@
 import React from "react"
 
 
-function Filter({handleTypeChange, handlePriceChange, onSearchChange}){
+function Filter({handleTypeChange, handlePriceChange, onSearchChange, search}){
   const handleChange = (e) => {
     onSearchChange(e.target.value)
   }
@@ -14,7 +14,7 @@ function Filter({handleTypeChange, handlePriceChange, onSearchChange}){
         <div className="Filter" onSubmit={handleSubmit} >
           <input type="text" 
           name="search"
-          value={onSearchChange} 
+          value={search} 
           onChange={handleChange}
           placeholder="Restaurant Name" />
     
