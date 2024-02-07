@@ -20,6 +20,13 @@
       "type": "American",
       "price": "$$",
       "id": 3
+    },
+    {
+      "name": "Bao Brewhouse",
+      "address": "14th st",
+      "type": "Chinese",
+      "price": "$$",
+      "id": 4
     }
   ]
 }

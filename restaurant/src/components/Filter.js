@@ -1,14 +1,24 @@
 import React from "react"
 
 
-function Filter(){
+function Filter({handleTypeChange, handlePriceChange, onSearchChange}){
+  const handleChange = (e) => {
+    onSearchChange(e.target.value)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    onSearchChange(e.target.value)
+  }
     return (
-        <div className="Filter" >
+        <div className="Filter" onSubmit={handleSubmit} >
           <input type="text" 
-          name="search" 
+          name="search"
+          value={onSearchChange} 
+          onChange={handleChange}
           placeholder="Restaurant Name" />
     
-          <select name="Filter" >
+          <select name="Filter" onChange={handleTypeChange}>
             <option value="All">Food Type</option>
             <option value="Spanish">Spanish</option>
             <option value="Italian">Italian</option>
@@ -21,12 +31,13 @@ function Filter(){
             <option value="Cocktails">Cocktails</option>
           </select>
 
-          <select name="Filter" >
+          <select name="Filter" onChange={handlePriceChange}>
             <option value="All">Price</option>
             <option value="$">$</option>
             <option value="$$">$$</option>
             <option value="$$$">$$$</option>
           </select>
+          
         </div>
       );
 
