@@ -1,12 +1,25 @@
 {
-  "Restaurants" : [
+  "Restaurants": [
     {
       "id": 1,
       "name": "Sap Sua",
       "address": "2550 E Colfax Ave",
       "type": "Vietnamese",
       "price": "$$"
+    },
+    {
+      "name": "Room for Milly",
+      "address": "1615 Platte St suite 145",
+      "type": "Cocktails",
+      "price": "$",
+      "id": 2
+    },
+    {
+      "name": "Bruto",
+      "address": "1801 Blake Street",
+      "type": "American",
+      "price": "$$",
+      "id": 3
     }
-    
   ]
 }

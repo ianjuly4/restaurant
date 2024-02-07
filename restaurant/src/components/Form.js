@@ -11,10 +11,10 @@ function Form(){
     function handleSubmit(e) {
         e.preventDefault();
         const newRestaurant = {
-            Name: restaurant,
-            Address: address,
-            Type: type,
-            Price: price,
+            name: restaurant,
+            address: address,
+            type: type,
+            price: price,
         }
         fetch("http://localhost:3000/Restaurants", {
             method: "POST",
@@ -64,6 +64,7 @@ function Form(){
                         <option value="Japanese">Japanese</option>
                         <option value="Indian">Indian</option>
                         <option value="Vietnamese">Vietnamese</option>
+                        <option value="Cocktails">Cocktails</option>
                     </select>
                 </label>
                 <label>

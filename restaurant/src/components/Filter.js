@@ -18,6 +18,7 @@ function Filter(){
             <option value="Japanese">Japanese</option>
             <option value="Indian">Indian</option>
             <option value="Vietnamese">Vietnamese</option>
+            <option value="Cocktails">Cocktails</option>
           </select>
 
           <select name="Filter" >
