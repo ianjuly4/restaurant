@@ -36,13 +36,6 @@
       "id": 6
     },
     {
-      "name": "Casa Bonita",
-      "address": "6715 W Colfax Ave",
-      "type": "Spanish",
-      "price": "$$",
-      "id": 7
-    },
-    {
       "name": "Wild Flower",
       "address": "3638 Navajo St",
       "type": "Italian",
@@ -55,6 +48,13 @@
       "type": "Chinese",
       "price": "$$",
       "id": 9
+    },
+    {
+      "name": "Casa Bonita",
+      "address": "6715 W Colfax Ave",
+      "type": "Spanish",
+      "price": "$$",
+      "id": 10
     }
   ]
 }

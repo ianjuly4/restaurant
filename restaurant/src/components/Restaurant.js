@@ -8,6 +8,7 @@ function Restaurant({name, address, type, price, restaurant, handleDelete}){
   })
   .then((r)=>r.json())
   .then(()=>handleDelete("My bad, thought you really liked that one"))
+  window.location.reload()
   }
 
 return (
