@@ -69,7 +69,15 @@
     font-size: 20px ;
     color: black;
 }
-.FormPage{
+.RestaurantHeader{
+        text-align: center;
+        font-size: 30px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: black;
+        color: white
+}
+.FormPage {
     margin: 2rem auto;
     padding: 1rem 2rem;
     max-width: 1200px;
@@ -78,14 +86,6 @@
     background-color: black;
     color:white
     
-}
-.RestaurantHeader{
-        text-align: center;
-        font-size: 30px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        background-color: black;
-        color: white
 }
 .FormHeader{
     text-align: center;
@@ -109,4 +109,20 @@
     background: white;
     box-shadow: 5px 5px 10px rgb(98, 230, 230);
     border-radius: 20px;
+}
+.About{
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    box-shadow: 20px 20px 25px rgba(33, 33, 33, 0.2);
+    border-radius: 25px;
+    background-color: black;
+    color:white
+}
+.AboutHeader {
+    text-align: center;
+    font-size: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white
 }

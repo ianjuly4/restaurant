@@ -1,11 +1,14 @@
 import React from "react"
 import NavBar from "./NavBar"
+import AboutHeader from "./AboutHeader"
+import AboutContent from "./AboutContent"
 
 function About(){
     return(
-        <div>
+        <div className="About">
             <NavBar/>
-            <h3>About component</h3>
+            <AboutHeader/>
+            <AboutContent/>
         </div>
     )
 }
