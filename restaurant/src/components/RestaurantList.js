@@ -26,6 +26,12 @@ function RestaurantList(){
   const onSearchChange = (text) => {
     setRestaurantText(text)
   }
+  const handleDelete = (clickedDelete) => {
+    const updatedRestaurants = restaurants.filter((restaurant)=>{
+     return restaurant.id !== clickedDelete.id;
+     setRestaurants(updatedRestaurants)
+    })
+   }
   const filteredRestaurants = restaurants.filter((restaurant)=>{
     if(selectedPrice  === "All") return true;
     return restaurant.price === selectedPrice
@@ -36,6 +42,8 @@ function RestaurantList(){
     return restaurant.name.toLowerCase().includes(restaurantText.toLowerCase())
   })
 
+  console.log(restaurants)
+  
     return(
     <div className="RestaurantList">
     <> 
@@ -50,7 +58,9 @@ function RestaurantList(){
         name={restaurant.name} 
         address={restaurant.address}
         type={restaurant.type}
-        price={restaurant.price}/>
+        price={restaurant.price}
+        restaurant={restaurant}
+        handleDelete={handleDelete}/>
       })
       }</ul>
     </>
