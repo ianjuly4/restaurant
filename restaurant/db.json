@@ -48,6 +48,13 @@
       "type": "Italian",
       "price": "$$",
       "id": 8
+    },
+    {
+      "name": "Daughter Tai ",
+      "address": "1700 Platte St Suite 140",
+      "type": "Chinese",
+      "price": "$$",
+      "id": 9
     }
   ]
 }
