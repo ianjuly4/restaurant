@@ -2,14 +2,14 @@ import React from "react"
 
 function Restaurant({name, address, type, price, restaurant, handleDelete}){
   
-  const handleDeleteClick = (e) =>{
+  const handleDeleteClick = () =>{
     fetch(`http://localhost:3000/Restaurants/${restaurant.id}`,{
       method: "DELETE"
   })
   .then((r)=>r.json())
   .then(()=>handleDelete("My bad, thought you really liked that one"))
   }
-console.log(restaurant)
+
 return (
     <li className="Restaurant">
       <h3>{name}</h3>

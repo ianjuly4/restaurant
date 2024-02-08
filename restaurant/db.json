@@ -41,6 +41,13 @@
       "type": "Spanish",
       "price": "$$",
       "id": 7
+    },
+    {
+      "name": "Wild Flower",
+      "address": "3638 Navajo St",
+      "type": "Italian",
+      "price": "$$",
+      "id": 8
     }
   ]
 }
