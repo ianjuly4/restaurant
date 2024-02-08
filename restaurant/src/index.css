@@ -77,6 +77,11 @@
         background-color: black;
         color: white
 }
+.Restaurant button{
+    width: 100px;
+    color:black;
+    background-color: white;
+}
 .FormPage {
     margin: 2rem auto;
     padding: 1rem 2rem;
