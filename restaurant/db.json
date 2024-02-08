@@ -34,6 +34,27 @@
       "type": "",
       "price": "",
       "id": 5
+    },
+    {
+      "name": "Hey Kiddo",
+      "address": "4337 Tennyson St #300",
+      "type": "Cocktails",
+      "price": "$$",
+      "id": 6
+    },
+    {
+      "name": "Casa Bonita",
+      "address": "6715 W Colfax Ave",
+      "type": "Spanish",
+      "price": "$$",
+      "id": 7
+    },
+    {
+      "name": "Casa Bonita",
+      "address": "6715 W Colfax Ave",
+      "type": "Spanish",
+      "price": "$$",
+      "id": 8
     }
   ]
 }

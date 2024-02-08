@@ -25,6 +25,10 @@ function Form(){
         })
         .then((r)=>r.json())
         .then((newRestaurant)=>console.log(newRestaurant))
+        setRestaurant("")
+        setAddress("")
+        setType("")
+        setPrice("")
     }
     return(
         <div>
