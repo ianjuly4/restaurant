@@ -1,7 +1,11 @@
 import React from "react"
 
 
-function Filter({handleTypeChange, handlePriceChange, onSearchChange, search}){
+function Filter({handleTypeChange, 
+  handlePriceChange, 
+  onSearchChange, 
+  search}){
+
   const handleChange = (e) => {
     onSearchChange(e.target.value)
   }
@@ -10,6 +14,8 @@ function Filter({handleTypeChange, handlePriceChange, onSearchChange, search}){
     e.preventDefault()
     onSearchChange(e.target.value)
   }
+
+ 
     return (
         <div className="Filter" onSubmit={handleSubmit} >
           <input type="text" 
@@ -37,7 +43,6 @@ function Filter({handleTypeChange, handlePriceChange, onSearchChange, search}){
             <option value="$$">$$</option>
             <option value="$$$">$$$</option>
           </select>
-          <button>RANDOM</button>
         </div>
       );
 

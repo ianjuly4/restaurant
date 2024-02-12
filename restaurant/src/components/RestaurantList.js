@@ -10,7 +10,7 @@ function RestaurantList(){
   const [restaurantText, setRestaurantText] = useState("")
   const [selectedType, setSelectedType] = useState("All")
   const [selectedPrice, setSelectedPrice] = useState("All")
-
+  
   useEffect(()=>{
     fetch("http://localhost:3000/Restaurants")
     .then((r)=>r.json())
@@ -31,7 +31,9 @@ function RestaurantList(){
      return restaurant.id !== clickedDelete.id;
      setRestaurants(updatedRestaurants)
     })
-   }
+  }
+  
+  
   const filteredRestaurants = restaurants.filter((restaurant)=>{
     if(selectedPrice  === "All") return true;
     return restaurant.price === selectedPrice
@@ -52,7 +54,8 @@ function RestaurantList(){
       <Filter handleTypeChange={handleTypeChange}
       handlePriceChange={handlePriceChange}
       onSearchChange={onSearchChange}
-      search={restaurantText}/>
+      search={restaurantText}
+      />
       <ul>{filteredRestaurants.map((restaurant)=>{
         return <Restaurant key={restaurant.id} 
         name={restaurant.name} 
