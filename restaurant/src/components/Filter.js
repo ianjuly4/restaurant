@@ -37,7 +37,7 @@ function Filter({handleTypeChange, handlePriceChange, onSearchChange, search}){
             <option value="$$">$$</option>
             <option value="$$$">$$$</option>
           </select>
-          
+          <button>RANDOM</button>
         </div>
       );
 
