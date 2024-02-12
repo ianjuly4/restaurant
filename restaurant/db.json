@@ -48,13 +48,6 @@
       "type": "Chinese",
       "price": "$$",
       "id": 9
-    },
-    {
-      "name": "Casa Bonita",
-      "address": "6715 W Colfax Ave",
-      "type": "Spanish",
-      "price": "$$",
-      "id": 10
     }
   ]
 }
