@@ -83,6 +83,12 @@
     color:black;
     background-color: white;
 }
+
+.Restaurant img{
+    height:200px;
+    width: 230px;
+}
+
 .FormPage {
     margin: 2rem auto;
     padding: 1rem 2rem;
@@ -109,7 +115,7 @@
   .Form input,
   .Form button {
     text-align: center;
-    width: 200px;
+    width: 180px;
     height: 30px;
     margin: 0 6px 6px;
     background: white;

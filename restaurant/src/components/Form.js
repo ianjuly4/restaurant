@@ -7,6 +7,7 @@ function Form(){
     const [address, setAddress] = useState("")
     const [type, setType] = useState("")
     const [price, setPrice] = useState("")
+    const [image, setImage] = useState("")
     
     function handleSubmit(e) {
         e.preventDefault();
@@ -15,6 +16,7 @@ function Form(){
             address: address,
             type: type,
             price: price,
+            imageUrl: image,
         }
         fetch("http://localhost:3000/Restaurants", {
             method: "POST",
@@ -29,6 +31,7 @@ function Form(){
         setAddress("")
         setType("")
         setPrice("")
+        setImage("")
     }
     return(
         <div>
@@ -36,16 +39,25 @@ function Form(){
                 <label>
                     <input 
                         type="text" 
-                        name="search" 
-                        placeholder="    Restaurant Name" 
+                        name="Restaurant Name" 
+                        placeholder="Restaurant Name" 
                         value={restaurant}
                         onChange={(e)=>setRestaurant(e.target.value)}
                     />
                 </label>
                 <label>
+                <input 
+                        type="text" 
+                        name="Restaurant Image" 
+                        placeholder="Restaurant Image" 
+                        value={image}
+                        onChange={(e)=>setImage(e.target.value)}
+                    />
+                </label>
+                <label>
                     <input
                         type="text"
-                        name="search"
+                        name="Restaurant Street Address"
                         placeholder='Restaurant Street Address' 
                         value={address}
                         onChange={(e)=>setAddress(e.target.value)}
@@ -67,6 +79,7 @@ function Form(){
                         <option value="Indian">Indian</option>
                         <option value="Vietnamese">Vietnamese</option>
                         <option value="Cocktails">Cocktails</option>
+                        <option value="Brunch">Brunch</option>
                     </select>
                 </label>
                 <label>

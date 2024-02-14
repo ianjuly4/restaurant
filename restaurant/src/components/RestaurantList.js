@@ -57,7 +57,8 @@ function RestaurantList(){
       search={restaurantText}
       />
       <ul>{filteredRestaurants.map((restaurant)=>{
-        return <Restaurant key={restaurant.id} 
+        return <Restaurant key={restaurant.id}
+        image={restaurant.imageUrl} 
         name={restaurant.name} 
         address={restaurant.address}
         type={restaurant.type}

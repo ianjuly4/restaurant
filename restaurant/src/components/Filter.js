@@ -35,6 +35,7 @@ function Filter({handleTypeChange,
             <option value="Indian">Indian</option>
             <option value="Vietnamese">Vietnamese</option>
             <option value="Cocktails">Cocktails</option>
+            <option value="Brunch">Brunch</option>
           </select>
 
           <select name="Filter" onChange={handlePriceChange}>
