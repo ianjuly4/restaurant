@@ -14,7 +14,7 @@ function Filter({handleTypeChange,
     e.preventDefault()
     onSearchChange(e.target.value)
   }
-
+  
  
     return (
         <div className="Filter" onSubmit={handleSubmit} >
@@ -44,6 +44,7 @@ function Filter({handleTypeChange,
             <option value="$$">$$</option>
             <option value="$$$">$$$</option>
           </select>
+
         </div>
       );
 
