@@ -19,7 +19,7 @@ return (
       <h5>Food Type: {type}</h5>
       <h5>Price: {price}</h5>
       <button className="Remove" 
-      onClick={handleDeleteClick}>Delete</button>
+      onClick={handleDeleteClick}>REMOVE</button>
     </li>
   );
 }  
