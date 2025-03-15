@@ -33,6 +33,8 @@ function RestaurantList(){
     })
   }
   
+
+
   const filteredRestaurants = restaurants.filter((restaurant)=>{
     if(selectedPrice  === "All") return true;
     return restaurant.price === selectedPrice
@@ -51,6 +53,7 @@ function RestaurantList(){
       <Filter handleTypeChange={handleTypeChange}
       handlePriceChange={handlePriceChange}
       onSearchChange={onSearchChange}
+      
       search={restaurantText}
       
       />

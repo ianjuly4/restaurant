@@ -3,7 +3,8 @@ import React from "react"
 
 function Filter({handleTypeChange, 
   handlePriceChange, 
-  onSearchChange, 
+  onSearchChange,
+
   search}){
 
   const handleChange = (e) => {
@@ -14,6 +15,8 @@ function Filter({handleTypeChange,
     e.preventDefault()
     onSearchChange(e.target.value)
   }
+
+ 
   
  
     return (
