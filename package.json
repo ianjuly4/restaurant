@@ -1,0 +1,27 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "Whether you're just visiting, a transplant, or a Denver local looking to change things up, we got an app for you! Our Denver Restaurant Finder allows users to discover new restaurants with similar vibes and prices to their \"tried and true\" favorites. Cant quite remember the name of that local favorite? No problem, the search bar includes partial and complete restaurant name matches. Don't see your favorite restaurant? Don't worry, utilize the \"Add\" page to add in that restaurant that turned out to be a hidden gem. Not really feeling Casa Bonita anymore? Or maybe an awful experience has left a bad taste in your mouth, feel free to remove it with our delete buttons.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "PORT=3001 react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianjuly4/restaurant.git"
+  },
+  
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
